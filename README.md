@@ -43,6 +43,13 @@ A página é composta por seções bem definidas:
 
 ---
 
+## 🔗 Links
+
+- GitHub: <a href="https://github.com/slayer-br/projeto_landing_page" target="_blank" rel="noopener noreferrer">Landing Page</a>
+- Site ao vivo: <a href="https://slayer-br.github.io/projeto_landing_page/" target="_blank" rel="noopener noreferrer">Landing Page</a>
+
+---
+
 ## 🧩 Estrutura do Projeto
 
 O projeto segue uma estrutura simples e organizada:
@@ -109,7 +116,7 @@ As **media queries** ajustam tipografia, espaçamento e colunas de grade conform
 
 2. Acesse a pasta do projeto:
    ```bash
-   cd future-tech-conference
+   cd projeto_lading_page
    ```
 
 3. Abra o arquivo `index.html` no seu navegador favorito.
