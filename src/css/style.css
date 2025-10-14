@@ -1,0 +1,243 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --color-white: #ffffff;
+  --color-light: #e0e0e0;
+  --color-gray: #888888;
+  --color-purple: #6c63ff;
+  --color-purple-hover: #554ec9;
+  --color-dark: #2c2c2e;
+  --color-black: #070707;
+
+  --color-primary: var(--color-purple);
+  --color-background: var(--color-light);
+  --color-foreground: var(--color-black);
+  --color-card-background: var(--color-white);
+}
+
+/* Base Styles */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../images/pexels-bertellifotografia-3321797.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: var(--color-white);
+  text-align: center;
+  display: grid;
+  place-content: center;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-purple-hover);
+}
+
+/* Speakers Section - Schedule Section */
+.speakers,
+.schedule {
+  padding: 3rem 1.5rem;
+}
+
+.speakers h2,
+.schedule h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.speakers-grid,
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.speaker-card,
+.schedule-item {
+  background-color: var(--color-card-background);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  max-width: 10rem;
+}
+
+.speaker-card h3,
+.schedule-item h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.speaker-card p,
+.schedule-item p {
+  font-size: 1.8rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 3rem 1.5rem;
+}
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.newsletter-text {
+  text-align: center;
+}
+
+.newsletter-text h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+.newsletter-text p {
+  color: var(--color-gray);
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+.form-group input {
+  width: 100%;
+  max-width: 32rem;
+  background-color: var(--color-card-background);
+  color: var(--color-foreground);
+  border: 1px solid var(--color-gray);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.newsletter-image {
+  text-align: center;
+}
+
+.newsletter-image img {
+  height: auto;
+  max-width: 75%;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 4.8rem;
+  }
+
+  .speakers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .newsletter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .newsletter-text {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero,
+  .speakers,
+  .schedule,
+  .newsletter {
+    padding: 4rem 8rem;
+  }
+}
+
+/* Color scheme */
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-dark);
+    --color-foreground: var(--color-white);
+    --color-card-background: var(--color-black);
+  }
+}
