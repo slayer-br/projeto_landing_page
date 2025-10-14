@@ -39,7 +39,7 @@ A página é composta por seções bem definidas:
 
 | 📱 Versão Mobile | 💻 Versão Desktop |
 |------------------|-------------------|
-| ![Mobile](./assets/images/landingpage-mobile.gif) | ![Desktop](./assets/images/landingpage-desktop.gif) |
+| ![Mobile](./src/images/landingpage-mobile.gif) | ![Desktop](./src/images/landingpage-desktop.gif) |
 
 ---
 
