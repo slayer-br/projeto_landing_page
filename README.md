@@ -35,6 +35,14 @@ A página é composta por seções bem definidas:
 
 ---
 
+## 📸 Screenshot
+
+| 📱 Versão Mobile | 💻 Versão Desktop |
+|------------------|-------------------|
+| ![Mobile](./assets/images/landingpage-mobile.gif) | ![Desktop](./assets/images/landingpage-desktop.gif) |
+
+---
+
 ## 🧩 Estrutura do Projeto
 
 O projeto segue uma estrutura simples e organizada:
@@ -113,7 +121,7 @@ As **media queries** ajustam tipografia, espaçamento e colunas de grade conform
 ## 👨‍💻 Autor
 
 Desenvolvido por **Carlos** 👋  
-💼 [LinkedIn](https://linkedin.com) • 🌍 [Portfólio](https://github.com/seuusuario)
+💼 [LinkedIn](https://www.linkedin.com/in/carlos-alberto-da-silva-93758b270/) • 🌍 [GitHub](https://github.com/slayer-br)
 
 > Projeto criado para fins educacionais como parte do curso da **OneBitCode**.
 
